@@ -1,0 +1,27 @@
+<div class="top">
+     
+</div>
+<div class="row">
+    <div class="col-10">
+        <mat-grid-list cols="3">
+            <mat-grid-tile *ngFor="let product of productdata" class="prodcut-tile">
+              <mat-card class="product-card">
+                <img mat-card-image src={{product.picture}} alt="Photo of product" style="width: 300px;">
+                <mat-card-content>
+                  <p>
+                    <a href="http://">{{product.title}}</a> 
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                </mat-card-actions>
+              </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+        
+    </div>
+    <div class="col-2">
+
+    </div>
+  </div>
+
+

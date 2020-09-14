@@ -1,3 +1,4 @@
+import { AllproductData } from './../models/product-data';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {map} from 'rxjs/operators'
@@ -14,7 +15,7 @@ export class ProductDataService {
 
     return this.http.get(this.productdataURL).pipe(
       map(result=>{
-        return result;
+        return <AllproductData[]>result;
       })
     )
 
