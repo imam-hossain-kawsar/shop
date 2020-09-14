@@ -10,6 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import {MatIconModule} from '@angular/material/icon';
+import { SortProductsComponent } from './components/sort-products/sort-products.component';
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    SortProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     HttpClientModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
