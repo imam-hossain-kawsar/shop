@@ -13,7 +13,7 @@
                       <p> 
                         <a routerLink='/productDetails' style="color: maroon">{{product.title}}</a><br><br>
                         $ {{product.price}} <br><hr>
-                        <app-cart-icon></app-cart-icon>
+                        <app-cart-icon [countclick]='countclick'></app-cart-icon>
                       </p>
                     </mat-card-content>
                     <mat-card-actions>
@@ -24,7 +24,8 @@
             
         </div>
         <div class="col-2">
-          <h4>Cart</h4>
+          <h4>Cart: {{countclick}}</h4>
+          
         </div>
       </div>
     

@@ -1,5 +1,5 @@
 import { ProductDataService } from './../../services/product-data.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { AllproductData } from 'src/app/models/product-data';
 
 @Component({
@@ -9,6 +9,8 @@ import { AllproductData } from 'src/app/models/product-data';
 })
 export class ProductCardComponent implements OnInit {
 
+  @Input('countclick')
+  countclick;
 
   productdata : AllproductData[];
   constructor(private dataservice: ProductDataService) { }
@@ -19,6 +21,7 @@ export class ProductCardComponent implements OnInit {
       {
         next:(result)=>{
           this.productdata = result;
+          this.countclick = this.countclick;
         }
       }
     )

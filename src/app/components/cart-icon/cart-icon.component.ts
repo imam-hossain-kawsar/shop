@@ -11,6 +11,7 @@ export class CartIconComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+     this.countclick
   }
 
   count(){
