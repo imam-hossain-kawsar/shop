@@ -11,9 +11,9 @@
                     <img mat-card-image src={{product.picture}} alt="Photo of product" style="width: 300px; height:200px;">
                     <mat-card-content>
                       <p> 
-                        <a href="http://" style="color: maroon">{{product.title}}</a><br><br>
+                        <a routerLink='/productDetails' style="color: maroon">{{product.title}}</a><br><br>
                         $ {{product.price}} <br><hr>
-                        <i class="fa fa-shopping-cart">Add To Cart</i>&nbsp;
+                        <app-cart-icon></app-cart-icon>
                       </p>
                     </mat-card-content>
                     <mat-card-actions>
@@ -24,7 +24,7 @@
             
         </div>
         <div class="col-2">
-    
+          <h4>Cart</h4>
         </div>
       </div>
     

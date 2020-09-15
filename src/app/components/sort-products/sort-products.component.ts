@@ -1,3 +1,5 @@
+import { AllproductData } from './../../models/product-data';
+import { ProductDataService } from './../../services/product-data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SortProductsComponent implements OnInit {
 
-  constructor() { }
+  
+  productdata : AllproductData[];
+  constructor(private dataservice: ProductDataService) { }
 
   ngOnInit(): void {
+    this.dataservice.getProductData()
+    .subscribe({
+      next:(result)=>{
+        this.productdata = result;
+      }
+    })
   }
-
 }

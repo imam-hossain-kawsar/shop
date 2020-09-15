@@ -2,7 +2,7 @@
     background-color:gainsboro;
     margin: auto;
     max-width: 300px;
-    max-height: 340px;
+    max-height: 345px;
     
 
   }
@@ -10,7 +10,7 @@
       height: 30px;
 }
  p{
-     font-size: 15px;
+     font-size: 13px;
      text-align: center;
  }
  

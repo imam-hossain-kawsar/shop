@@ -12,6 +12,9 @@ import {MatCardModule} from '@angular/material/card';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import {MatIconModule} from '@angular/material/icon';
 import { SortProductsComponent } from './components/sort-products/sort-products.component';
+import { CartIconComponent } from './components/cart-icon/cart-icon.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { SortProductsComponent } from './components/sort-products/sort-products.
     HeaderComponent,
     HomeComponent,
     ProductCardComponent,
-    SortProductsComponent
+    SortProductsComponent,
+    CartIconComponent,
+    ProductDetailsComponent,
+    ShoppingCartComponent
   ],
   imports: [
     BrowserModule,
